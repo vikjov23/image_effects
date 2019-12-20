@@ -10,14 +10,14 @@ html[0].addEventListener("dblclick", changeImage);
 // changeEffect = () => {
 //   img1.style.display = "none";
 // };
-var effects = ["blur(5px)", "grayscale(100%)", "blur(40px)"];
+var effects = ["blur(5px)", "grayscale(100%)", "blur(40px)", "blur(0px)"];
 var index = 0;
 
 function changeEffect() {
   img1.style.filter = effects[index];
   console.log("the value of index", index);
-  if (index == 2) {
-    index = index - 3;
+  if (index == 3) {
+    index = index - 4;
     // console.log("hoho", effects);
   }
   index++;
